@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | AuraTravels</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-airplane-engines text-primary-custom me-2"></i> AuraTravels
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold text-primary-custom" id="offcanvasNavbarLabel">
+                        <i class="bi bi-airplane-engines me-2"></i> AuraTravels
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Home2.html">Home 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <div class="d-flex flex-column flex-lg-row gap-2 mt-3 mt-lg-0 align-items-lg-center">
+                            <a href="login.html" class="btn btn-outline-primary fw-medium px-4">Login</a>
+                            <a href="signup.html" class="btn btn-primary-custom fw-medium px-4">Sign Up</a>
+
+                            <button id="themeToggle" class="btn btn-link nav-link p-0 ms-lg-2 fs-5"
+                                aria-label="Toggle Theme">
+                                <i id="themeIcon" class="bi bi-moon-stars"></i>
+                            </button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5 bg-tertiary-custom text-white text-center">
+        <div class="container py-4">
+            <h1 class="display-4 fw-bold">About AuraTravels</h1>
+            <p class="lead opacity-75">Your trusted partner in creating unforgettable memories around the globe.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Travelers" class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="col-lg-6 px-lg-5">
+                    <h2 class="fw-bold mb-4">Our Story</h2>
+                    <p class="text-muted lead">Founded in 2015, AuraTravels started with a simple belief: that travel
+                        changes lives for the better.</p>
+                    <p class="text-muted">What began as a small regional agency has blossomed into a global platform,
+                        helping thousands of thrill-seekers, families, and solo travelers discover the incredible beauty
+                        of our planet. We believe in sustainable tourism, community engagement, and crafting
+                        personalized experiences that resonate long after you return home.</p>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-4 text-center">
+                <div class="col-md-4">
+                    <div class="card card-custom border-0 p-4 shadow-premium rounded-4 h-100">
+                        <div class="text-primary-custom display-4 mb-3"><i class="bi bi-globe-americas"></i></div>
+                        <h4 class="fw-bold">Global Reach</h4>
+                        <p class="text-muted mb-0">Partnered with over 5,000 hotels and airlines worldwide to give you
+                            endless options.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom border-0 p-4 shadow-premium rounded-4 h-100">
+                        <div class="text-secondary-custom display-4 mb-3"><i class="bi bi-heart-fill"></i></div>
+                        <h4 class="fw-bold">Customer First</h4>
+                        <p class="text-muted mb-0">Our 24/7 dedicated support team ensures your trip goes smoothly,
+                            every single time.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom border-0 p-4 shadow-premium rounded-4 h-100">
+                        <div class="text-tertiary-custom display-4 mb-3"><i class="bi bi-award-fill"></i></div>
+                        <h4 class="fw-bold">Award Winning</h4>
+                        <p class="text-muted mb-0">Recognized as the 'Best Travel Agency 2024' offering premium curated
+                            experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Journey Timeline -->
+        <div class="mt-5 pt-5 border-top border-secondary border-opacity-10">
+            <div class="text-center mb-5">
+                <span
+                    class="text-secondary-custom fw-bold px-3 py-1 bg-light rounded-pill mb-3 d-inline-block shadow-sm">Timeline</span>
+                <h2 class="fw-bold">Our <span class="text-primary-custom">Journey</span></h2>
+                <p class="text-muted">A decade of crafting extraordinary adventures.</p>
+            </div>
+            <div class="row g-4 position-relative">
+                <div class="col-md-4">
+                    <div
+                        class="card card-custom p-4 border-0 shadow-premium rounded-4 border-bottom border-primary border-4 h-100 justify-content-center">
+                        <h3 class="fw-bold text-primary-custom mb-3 display-6">2015</h3>
+                        <h5 class="fw-bold">The Beginning</h5>
+                        <p class="text-muted small mb-0">Started as a small boutique agency in New York with just 5
+                            specialized tour guides.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div
+                        class="card card-custom p-4 border-0 shadow-premium rounded-4 border-bottom border-secondary border-4 h-100 justify-content-center">
+                        <h3 class="fw-bold text-secondary-custom mb-3 display-6">2019</h3>
+                        <h5 class="fw-bold">Global Expansion</h5>
+                        <p class="text-muted small mb-0">Reached 50+ countries. Launched our award-winning mobile
+                            planning platform.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div
+                        class="card card-custom p-4 border-0 shadow-premium rounded-4 border-bottom border-tertiary border-4 h-100 justify-content-center">
+                        <h3 class="fw-bold text-tertiary-custom mb-3 display-6">2026</h3>
+                        <h5 class="fw-bold">Luxury & Beyond</h5>
+                        <p class="text-muted small mb-0">Over 50,000 satisfied travelers. Leading the sustainable &
+                            premium travel sector.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Meet Our Expert Team</h2>
+                <p class="text-muted">The passionate people behind your unforgettable journeys.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card border-0 text-center bg-transparent">
+                        <img src="https://ui-avatars.com/api/?name=David+Wilson&background=0B2545&color=fff&rounded=true&size=150"
+                            alt="Team Member"
+                            class="rounded-circle mx-auto mb-3 object-fit-cover shadow-premium img-thumbnail border-0"
+                            style="width: 150px; height: 150px; object-fit: cover;">
+                        <h5 class="fw-bold mb-1">David Wilson</h5>
+                        <p class="text-primary-custom small fw-medium">Founder & CEO</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 text-center bg-transparent">
+                        <img src="https://ui-avatars.com/api/?name=Sarah+Jenkins&background=E6AF2E&color=fff&rounded=true&size=150"
+                            alt="Team Member"
+                            class="rounded-circle mx-auto mb-3 object-fit-cover shadow-premium img-thumbnail border-0"
+                            style="width: 150px; height: 150px; object-fit: cover;">
+                        <h5 class="fw-bold mb-1">Sarah Jenkins</h5>
+                        <p class="text-primary-custom small fw-medium">Head of Operations</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 text-center bg-transparent">
+                        <img src="https://ui-avatars.com/api/?name=Michael+Chen&background=4A6FA5&color=fff&rounded=true&size=150"
+                            alt="Team Member"
+                            class="rounded-circle mx-auto mb-3 object-fit-cover shadow-premium img-thumbnail border-0"
+                            style="width: 150px; height: 150px; object-fit: cover;">
+                        <h5 class="fw-bold mb-1">Michael Chen</h5>
+                        <p class="text-primary-custom small fw-medium">Chief Tour Guide</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 text-center bg-transparent">
+                        <img src="https://ui-avatars.com/api/?name=Elena+Rodriguez&background=10b981&color=fff&rounded=true&size=150"
+                            alt="Team Member"
+                            class="rounded-circle mx-auto mb-3 object-fit-cover shadow-premium img-thumbnail border-0"
+                            style="width: 150px; height: 150px; object-fit: cover;">
+                        <h5 class="fw-bold mb-1">Elena Rodriguez</h5>
+                        <p class="text-primary-custom small fw-medium">Customer Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-primary-custom text-white text-center">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <h2 class="display-4 fw-bold mb-2">15+</h2>
+                    <p class="mb-0 opacity-75">Years Experience</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="display-4 fw-bold mb-2">50k+</h2>
+                    <p class="mb-0 opacity-75">Happy Travelers</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="display-4 fw-bold mb-2">100+</h2>
+                    <p class="mb-0 opacity-75">Destinations</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="display-4 fw-bold mb-2">24/7</h2>
+                    <p class="mb-0 opacity-75">Support Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Sustainability Section -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 pe-lg-5">
+                    <span
+                        class="text-tertiary-custom fw-bold px-3 py-1 bg-light rounded-pill mb-3 d-inline-block shadow-sm">Eco-Friendly</span>
+                    <h2 class="fw-bold mb-4 display-5">Commitment to <span
+                            class="text-tertiary-custom">Sustainability</span></h2>
+                    <p class="text-muted lead mb-4">We believe the world's beauty should be preserved for generations to
+                        come. That's why every AuraTravels trip operates carbon-neutral.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-3 d-flex align-items-center">
+                            <div class="bg-tertiary-custom text-white rounded-circle d-flex justify-content-center align-items-center me-3 shadow-sm"
+                                style="width: 32px; height: 32px;"><i class="bi bi-check"></i></div> <span
+                                class="fw-medium">100% Carbon offset flights</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <div class="bg-tertiary-custom text-white rounded-circle d-flex justify-content-center align-items-center me-3 shadow-sm"
+                                style="width: 32px; height: 32px;"><i class="bi bi-check"></i></div> <span
+                                class="fw-medium">Partnering with eco-lodges</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <div class="bg-tertiary-custom text-white rounded-circle d-flex justify-content-center align-items-center me-3 shadow-sm"
+                                style="width: 32px; height: 32px;"><i class="bi bi-check"></i></div> <span
+                                class="fw-medium">Supporting local communities</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div
+                                class="card card-custom border-0 bg-light p-4 text-center rounded-4 shadow-premium h-100">
+                                <i class="bi bi-award text-secondary-custom display-4 mb-3"></i>
+                                <h6 class="fw-bold">World Travel Awards</h6>
+                                <p class="text-muted small mb-0">Best Global Tour Operator 2024</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div
+                                class="card card-custom border-0 bg-light p-4 text-center rounded-4 shadow-premium h-100">
+                                <i class="bi bi-star text-primary-custom display-4 mb-3"></i>
+                                <h6 class="fw-bold">TripAdvisor</h6>
+                                <p class="text-muted small mb-0">Travelers' Choice 2023-2025</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div
+                                class="card card-custom border-0 bg-light p-4 text-center rounded-4 shadow-premium h-100">
+                                <i class="bi bi-shield-check text-tertiary-custom display-4 mb-3"></i>
+                                <h6 class="fw-bold">Eco-Tourism Cert</h6>
+                                <p class="text-muted small mb-0">Platinum Sustainability Status</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div
+                                class="card card-custom border-0 bg-light p-4 text-center rounded-4 shadow-premium h-100">
+                                <i class="bi bi-globe text-primary-custom display-4 mb-3"></i>
+                                <h6 class="fw-bold">Global Nomads</h6>
+                                <p class="text-muted small mb-0">Top 10 Agencies in USA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer border-top-0 pt-5 mt-0 bg-light">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="text-decoration-none d-flex align-items-center mb-3">
+                        <i class="bi bi-airplane-engines fs-2 text-primary-custom me-2"></i>
+                        <span class="fs-3 fw-bold text-primary-custom">AuraTravels</span>
+                    </a>
+                    <p class="text-muted mb-4 pe-lg-4">
+                        Making your travel dreams true with professional guided tours, standard hotel bookings, and safe
+                        flight reservations worldwide.
+                    </p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="services.html" class="footer-link">Our Services</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="bi bi-geo-alt text-primary-custom me-2"></i> 123 Travel Avenue, NY
+                            10001, USA</li>
+                        <li class="mb-2"><i class="bi bi-telephone text-primary-custom me-2"></i> +1 (555) 123-4567</li>
+                        <li class="mb-2"><i class="bi bi-envelope text-primary-custom me-2"></i> support@auratravels.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary opacity-25">
+            <div class="text-center pb-3 pt-2">
+                <p class="text-muted mb-0">&copy; 2026 AuraTravels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Go to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

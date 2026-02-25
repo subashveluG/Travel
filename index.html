@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraTravels | Your Journey Begins Here</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-airplane-engines text-primary-custom me-2"></i> AuraTravels
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas for Mobile -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold text-primary-custom" id="offcanvasNavbarLabel">
+                        <i class="bi bi-airplane-engines me-2"></i> AuraTravels
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <!-- Navigation Links -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Home2.html">Home 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <!-- Actions -->
+                        <div class="d-flex flex-column flex-lg-row gap-2 mt-3 mt-lg-0 align-items-lg-center">
+                            <a href="login.html" class="btn btn-outline-primary fw-medium px-4">Login</a>
+                            <a href="signup.html" class="btn btn-primary-custom fw-medium px-4">Sign Up</a>
+
+                            <!-- Theme Toggle -->
+                            <button id="themeToggle" class="btn btn-link nav-link p-0 ms-lg-2 fs-5"
+                                aria-label="Toggle Theme">
+                                <i id="themeIcon" class="bi bi-moon-stars"></i>
+                            </button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <span
+                        class="text-tertiary-custom fw-bold px-3 py-1 bg-white rounded-pill shadow-sm d-inline-block mb-3">
+                        <i class="bi bi-globe2 me-2"></i> Explore The World
+                    </span>
+                    <h1 class="hero-title">
+                        Discover Your Next <br>
+                        <span>Great Adventure</span>
+                    </h1>
+                    <p class="lead mb-4 text-secondary">
+                        Experience the world's most breathtaking places with AuraTravels. We offer curated packages for
+                        memorable journeys.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="services.html" class="btn btn-primary-custom btn-lg px-5 rounded-pill shadow">Book
+                            Now</a>
+                        <a href="#destinations" class="btn btn-outline-secondary btn-lg px-5 rounded-pill">Explore</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative">
+                    <div class="position-relative z-1 text-center">
+                        <!-- Placeholder for a stunning image -->
+                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Travel Header" class="img-fluid rounded-4 shadow-lg"
+                            style="object-fit: cover; height: 500px; width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Features / Why Choose Us -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Why Choose <span class="text-secondary-custom">AuraTravels</span></h2>
+                <p class="text-muted">We provide the best travel experiences in the world</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 text-center border-0">
+                        <div class="icon-box mb-3 display-4 text-primary-custom">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h4 class="fw-bold">Safe Travels</h4>
+                        <p class="text-muted">Your safety is our priority. We partner with verified services worldwide.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 text-center border-0">
+                        <div class="icon-box mb-3 display-4 text-secondary-custom">
+                            <i class="bi bi-wallet2"></i>
+                        </div>
+                        <h4 class="fw-bold">Best Pricing</h4>
+                        <p class="text-muted">Get the most value for your money with our guaranteed price match.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 text-center border-0">
+                        <div class="icon-box mb-3 display-4 text-tertiary-custom">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <h4 class="fw-bold">Beautiful Places</h4>
+                        <p class="text-muted">Handpicked destinations to ensure unforgettable memories.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1.5: How It Works -->
+    <section class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span
+                    class="text-tertiary-custom fw-bold px-3 py-1 bg-light rounded-pill mb-3 d-inline-block shadow-sm">Simple
+                    Process</span>
+                <h2 class="fw-bold">How <span class="text-secondary-custom">AuraTravels</span> Works</h2>
+                <p class="text-muted">Three simple steps to start your dream vacation</p>
+            </div>
+            <div class="row position-relative text-center g-4">
+                <div class="col-md-4">
+                    <div class="d-inline-flex justify-content-center align-items-center bg-primary-custom text-white rounded-circle mb-4 shadow-lg"
+                        style="width: 80px; height: 80px; font-size: 32px;">
+                        1
+                    </div>
+                    <h4 class="fw-bold">Choose Destination</h4>
+                    <p class="text-muted">Browse our wide selection of stunning locations across the globe.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-inline-flex justify-content-center align-items-center bg-secondary-custom text-dark rounded-circle mb-4 shadow-lg"
+                        style="width: 80px; height: 80px; font-size: 32px;">
+                        2
+                    </div>
+                    <h4 class="fw-bold">Book & Pay</h4>
+                    <p class="text-muted">Securely pay for your flights, hotels, and tours seamlessly.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-inline-flex justify-content-center align-items-center bg-tertiary-custom text-white rounded-circle mb-4 shadow-lg"
+                        style="width: 80px; height: 80px; font-size: 32px;">
+                        3
+                    </div>
+                    <h4 class="fw-bold">Enjoy The Trip</h4>
+                    <p class="text-muted">Pack your bags and enjoy the carefully planned itinerary.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Tour & Stats Section -->
+    <section
+        class="py-5 position-relative bg-dark text-white rounded-5 mx-3 mx-lg-5 mb-5 overflow-hidden shadow-premium">
+        <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+            alt="Video Background" class="position-absolute w-100 h-100 opacity-50"
+            style="top: 0; left: 0; object-fit: cover;">
+        <div class="container position-relative py-5 text-center z-1">
+            <a href="#"
+                class="d-inline-flex justify-content-center align-items-center bg-white text-primary-custom rounded-circle mb-4 shadow-lg"
+                style="width: 80px; height: 80px; font-size: 2rem; text-decoration: none; transition: transform 0.3s ease;">
+                <i class="bi bi-play-fill" style="margin-left: 5px;"></i>
+            </a>
+            <h2 class="fw-bold display-5 mb-4">Discover The Unseen World</h2>
+
+            <div class="row g-4 mt-4 pt-4 border-top border-secondary border-opacity-25 glass-overlay rounded-4 p-3 mx-auto"
+                style="max-width: 900px;">
+                <div class="col-6 col-md-3">
+                    <h2 class="fw-bold text-secondary-custom mb-1">50K+</h2>
+                    <p class="small mb-0 opacity-75">Happy Customers</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="fw-bold text-secondary-custom mb-1">120+</h2>
+                    <p class="small mb-0 opacity-75">Destinations</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="fw-bold text-secondary-custom mb-1">15+</h2>
+                    <p class="small mb-0 opacity-75">Years Experience</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="fw-bold text-secondary-custom mb-1">4.9</h2>
+                    <p class="small mb-0 opacity-75">Overall Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Popular Destinations -->
+    <section id="destinations" class="py-5 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <div>
+                    <h2 class="fw-bold">Popular Destinations</h2>
+                    <p class="text-muted mb-0">Explore our most visited locations</p>
+                </div>
+                <a href="services.html" class="btn btn-outline-primary d-none d-sm-block rounded-pill px-4">View All</a>
+            </div>
+            <div class="row g-4">
+                <!-- Destination 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom border-0 shadow-premium rounded-4 position-relative">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top" alt="Bali" style="height: 250px; object-fit: cover;">
+                        <span
+                            class="position-absolute top-0 end-0 m-3 badge bg-tertiary-custom p-2 rounded-pill shadow">$850+</span>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Bali, Indonesia</h5>
+                            <p class="card-text text-muted mb-2"><i class="bi bi-geo-fill text-danger me-1"></i>
+                                Southeast Asia</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <span class="text-muted ms-1 text-sm">(4.8)</span>
+                                </div>
+                                <a href="services.html" class="btn btn-sm btn-primary-custom rounded-circle"><i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom border-0 shadow-premium rounded-4 position-relative">
+                        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top" alt="Paris" style="height: 250px; object-fit: cover;">
+                        <span
+                            class="position-absolute top-0 end-0 m-3 badge bg-tertiary-custom p-2 rounded-pill shadow">$1200+</span>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Paris, France</h5>
+                            <p class="card-text text-muted mb-2"><i class="bi bi-geo-fill text-danger me-1"></i> Western
+                                Europe</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span class="text-muted ms-1 text-sm">(5.0)</span>
+                                </div>
+                                <a href="services.html" class="btn btn-sm btn-primary-custom rounded-circle"><i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination 3 -->
+                <div class="col-md-6 col-lg-4 d-md-none d-lg-block">
+                    <div class="card card-custom border-0 position-relative">
+                        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top" alt="Maldives" style="height: 250px; object-fit: cover;">
+                        <span
+                            class="position-absolute top-0 end-0 m-3 badge bg-tertiary-custom p-2 rounded-pill shadow">$1500+</span>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Maldives</h5>
+                            <p class="card-text text-muted mb-2"><i class="bi bi-geo-fill text-danger me-1"></i> South
+                                Asia</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span class="text-muted ms-1 text-sm">(4.9)</span>
+                                </div>
+                                <a href="services.html" class="btn btn-sm btn-primary-custom rounded-circle"><i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Special Banner Promo -->
+    <section class="py-5">
+        <div class="container">
+            <div class="card bg-primary-custom text-white border-0 overflow-hidden shadow-lg rounded-4">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6 p-5">
+                        <span class="badge bg-white text-primary rounded-pill px-3 py-2 mb-3 fw-bold">Special
+                            Offer</span>
+                        <h2 class="display-5 fw-bold mb-3">Get 20% Off Your First Trip With Us</h2>
+                        <p class="lead mb-4 opacity-75">Sign up today and receive an exclusive discount code straight
+                            into your inbox. Limited time offer!</p>
+                        <a href="signup.html"
+                            class="btn btn-secondary-custom btn-lg px-5 rounded-pill outline-none border-0">Claim Offer
+                            <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block"
+                        style="height: 100%; min-height: 400px; background: url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Video / Experience -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Experience The <span class="text-primary-custom">Magic</span></h2>
+            <div class="position-relative rounded-4 overflow-hidden shadow-lg mx-auto" style="max-width: 900px;">
+                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    class="img-fluid" alt="Experience Magic"
+                    style="height: 500px; object-fit: cover; width: 100%; filter: brightness(0.7);">
+                <a href="#"
+                    class="position-absolute top-50 start-50 translate-middle text-white display-1 text-decoration-none transition"
+                    style="transition: transform 0.3s; pointer-events: none;">
+                    <i class="bi bi-play-circle-fill" style="filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Top Travel Agents -->
+    <section class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span
+                    class="text-tertiary-custom fw-bold px-3 py-1 bg-light rounded-pill mb-3 d-inline-block shadow-sm">Meet
+                    The Experts</span>
+                <h2 class="fw-bold">Our Top <span class="text-primary-custom">Travel Agents</span></h2>
+                <p class="text-muted">Dedicated professionals ready to curate your next journey</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 border-0 shadow-premium rounded-4">
+                        <img src="https://ui-avatars.com/api/?name=Emma+Watson&background=0B2545&color=fff&rounded=true&size=100"
+                            class="mx-auto mb-3" alt="Agent">
+                        <h5 class="fw-bold mb-1">Emma Watson</h5>
+                        <p class="text-tertiary-custom small fw-bold">Europe Specialist</p>
+                        <p class="text-muted small">"I'll help you find the finest hidden gems across Europe."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 border-0 shadow-premium rounded-4">
+                        <img src="https://ui-avatars.com/api/?name=James+Smith&background=E6AF2E&color=fff&rounded=true&size=100"
+                            class="mx-auto mb-3" alt="Agent">
+                        <h5 class="fw-bold mb-1">James Smith</h5>
+                        <p class="text-tertiary-custom small fw-bold">Adventure Expert</p>
+                        <p class="text-muted small">"Thrills and wilderness are my ultimate specialty."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 border-0 shadow-premium rounded-4">
+                        <img src="https://ui-avatars.com/api/?name=Sophia+Lee&background=4A6FA5&color=fff&rounded=true&size=100"
+                            class="mx-auto mb-3" alt="Agent">
+                        <h5 class="fw-bold mb-1">Sophia Lee</h5>
+                        <p class="text-tertiary-custom small fw-bold">Luxury Escapes</p>
+                        <p class="text-muted small">"Experience 5-star perfection anywhere in the world."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">What Our Clients Say</h2>
+                <p class="text-muted">Don't just take our word for it.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom p-4 border-0 shadow-premium rounded-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://ui-avatars.com/api/?name=Sarah+Jenkins&background=eb4034&color=fff&rounded=true"
+                                alt="User" class="me-3" style="width: 60px; height: 60px;">
+                            <div>
+                                <h5 class="mb-0 fw-bold">Sarah Jenkins</h5>
+                                <div class="text-warning small">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-muted fst-italic">"AuraTravels made our honeymoon absolutely perfect. The
+                            itinerary was flawless and the resorts were breathtaking."</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom p-4 border-0 shadow-premium rounded-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://ui-avatars.com/api/?name=Michael+Chen&background=345eeb&color=fff&rounded=true"
+                                alt="User" class="me-3" style="width: 60px; height: 60px;">
+                            <div>
+                                <h5 class="mb-0 fw-bold">Michael Chen</h5>
+                                <div class="text-warning small">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-muted fst-italic">"Great customer service. Whenever we had a question, they
+                            responded immediately. Highly recommend their European tour packages."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Newsletter / Partner -->
+    <section
+        class="py-5 bg-tertiary-custom text-white position-relative overflow-hidden mb-5 mx-3 mx-lg-5 rounded-5 shadow-premium">
+        <!-- Abstract Decoration -->
+        <div class="position-absolute rounded-circle bg-white opacity-25"
+            style="width: 300px; height: 300px; top: -100px; right: -50px; filter: blur(40px);"></div>
+        <div class="container text-center position-relative z-1 py-4">
+            <h2 class="fw-bold mb-3 display-5">Ready to start your journey?</h2>
+            <p class="mb-4 lead opacity-75">Subscribe to our newsletter for the latest updates and exclusive luxury
+                offers.</p>
+            <div class="mx-auto" style="max-width: 500px;">
+                <form class="input-group mb-3 shadow-lg rounded-pill overflow-hidden bg-white p-1">
+                    <input type="email" class="form-control border-0 px-4 py-3 bg-transparent text-dark"
+                        placeholder="Enter your email" aria-label="Enter your email"
+                        style="outline: none; box-shadow: none;">
+                    <button class="btn btn-primary-custom rounded-pill px-4 fw-bold border-0"
+                        type="button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Recent Articles -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <div>
+                    <span
+                        class="text-secondary-custom fw-bold px-3 py-1 bg-white rounded-pill mb-2 d-inline-block shadow-sm">Our
+                        Blog</span>
+                    <h2 class="fw-bold">Travel <span class="text-primary-custom">Stories</span></h2>
+                </div>
+                <a href="#" class="btn btn-outline-secondary d-none d-sm-block rounded-pill px-4">Read All</a>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom border-0 overflow-hidden shadow-premium h-100 rounded-4">
+                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Blog" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <span class="text-tertiary-custom small fw-bold mb-2 d-block">Tips & Guides • Oct 12</span>
+                            <h5 class="fw-bold mb-3">10 Essential Items for Your Next Backpacking Trip</h5>
+                            <p class="text-muted small mb-4">Don't leave home without these crucial items to make your
+                                journey safer and more enjoyable.</p>
+                            <div class="mt-auto">
+                                <a href="#" class="text-primary-custom fw-bold text-decoration-none">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom border-0 overflow-hidden shadow-premium h-100 rounded-4">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Blog" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <span class="text-tertiary-custom small fw-bold mb-2 d-block">Destinations • Nov 05</span>
+                            <h5 class="fw-bold mb-3">Hidden Beaches in Southeast Asia You Must Visit</h5>
+                            <p class="text-muted small mb-4">Escape the crowds and discover the pristine and untouched
+                                coastal havens of Asia.</p>
+                            <div class="mt-auto">
+                                <a href="#" class="text-primary-custom fw-bold text-decoration-none">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-md-none d-lg-block">
+                    <div class="card card-custom border-0 overflow-hidden shadow-premium h-100 rounded-4">
+                        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Blog" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <span class="text-tertiary-custom small fw-bold mb-2 d-block">Luxury Travel • Dec 20</span>
+                            <h5 class="fw-bold mb-3">Top 5 Overwater Bungalows in The Maldives</h5>
+                            <p class="text-muted small mb-4">Experience ultimate luxury and wake up to crystal clear
+                                waters right beneath your feet.</p>
+                            <div class="mt-auto">
+                                <a href="#" class="text-primary-custom fw-bold text-decoration-none">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer border-top-0 pt-5 mt-0">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <!-- Column 1: Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="text-decoration-none d-flex align-items-center mb-3">
+                        <i class="bi bi-airplane-engines fs-2 text-primary-custom me-2"></i>
+                        <span class="fs-3 fw-bold text-primary-custom">AuraTravels</span>
+                    </a>
+                    <p class="text-muted mb-4 pe-lg-4">
+                        Making your travel dreams true with professional guided tours, standard hotel bookings, and safe
+                        flight reservations worldwide.
+                    </p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Company -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="services.html" class="footer-link">Our Services</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Support -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="bi bi-geo-alt text-primary-custom me-2"></i> 123 Travel Avenue, NY
+                            10001, USA</li>
+                        <li class="mb-2"><i class="bi bi-telephone text-primary-custom me-2"></i> +1 (555) 123-4567</li>
+                        <li class="mb-2"><i class="bi bi-envelope text-primary-custom me-2"></i> support@auratravels.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary opacity-25">
+            <div class="text-center pb-3 pt-2">
+                <p class="text-muted mb-0">&copy; 2026 AuraTravels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

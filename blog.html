@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog | AuraTravels</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top glass-overlay px-3 px-lg-0 py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-airplane-engines fs-2 text-primary-custom me-2"></i>
+                <span class="fs-4 fw-bold text-primary-custom">AuraTravels</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-card" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title fw-bold text-primary-custom" id="offcanvasNavbarLabel">
+                        <i class="bi bi-airplane-engines me-2"></i> AuraTravels
+                    </h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-2 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu border-0 shadow-sm rounded-3">
+                                <li><a class="dropdown-item" href="index.html">Home Variation 1</a></li>
+                                <li><a class="dropdown-item" href="Home2.html">Home Variation 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="destinations.html">Destinations</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="packages.html">Packages</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active fw-bold text-primary-custom" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav align-items-lg-center">
+                        <li class="nav-item mb-2 mb-lg-0 me-lg-2">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 me-lg-3">
+                            <a class="btn btn-primary-custom rounded-pill px-4 fw-bold" href="signup.html">Sign Up</a>
+                        </li>
+                        <div class="vr d-none d-lg-block mx-2 bg-secondary opacity-25"></div>
+                        <div class="d-flex align-items-center mt-3 mt-lg-0">
+                            <button id="themeToggle" class="btn btn-link nav-link p-0 ms-lg-2 fs-5"
+                                aria-label="Toggle Theme">
+                                <i id="themeIcon" class="bi bi-moon-stars"></i>
+                            </button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section
+        class="py-5 bg-tertiary-custom text-white position-relative overflow-hidden mb-5 mx-3 mx-lg-5 rounded-5 shadow-premium">
+        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&fm=jpg&fit=crop&w=1600&q=80"
+            alt="Travel Journal" class="position-absolute w-100 h-100 opacity-25"
+            style="top: 0; left: 0; object-fit: cover; filter: grayscale(50%);">
+        <div class="container py-5 text-center position-relative z-1">
+            <span
+                class="badge bg-white text-tertiary-custom rounded-pill px-3 py-2 mb-3 shadow-sm fw-bold">Journal</span>
+            <h1 class="display-4 fw-bold">Travel Stories & Tips</h1>
+            <p class="lead opacity-75 mx-auto" style="max-width: 600px;">Read inspiring stories, expert guides, and
+                practical tips to fuel your next adventure.</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row g-5">
+
+                <!-- Main Articles Area -->
+                <div class="col-lg-8">
+
+                    <!-- Featured Post -->
+                    <div class="card card-custom border-0 shadow-premium rounded-5 overflow-hidden mb-5">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&fm=jpg&fit=crop&w=1200&q=80"
+                            alt="Featured Image" class="card-img-top" style="height: 400px; object-fit: cover;">
+                        <div class="card-body p-4 p-md-5">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-primary-custom px-3 py-2 rounded-pill me-3 shadow-sm">Guide</span>
+                                <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i> Oct 24, 2026</span>
+                            </div>
+                            <h2 class="fw-bold mb-3"><a href="#"
+                                    class="text-decoration-none text-dark hover-primary-custom">The Ultimate Guide to
+                                    Island Hopping in the Maldives</a></h2>
+                            <p class="text-muted mb-4 lead">Discover the secrets to navigating the breathtaking atolls
+                                of the Maldives on a budget without compromising on luxury.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://ui-avatars.com/api/?name=Jane+Doe&background=E6AF2E&color=fff&rounded=true"
+                                        alt="Author" width="40" height="40" class="rounded-circle me-3">
+                                    <div>
+                                        <h6 class="mb-0 fw-bold">Jane Doe</h6>
+                                        <span class="text-muted small">Travel Expert</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary rounded-pill px-4">Read More <i
+                                        class="bi bi-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 mb-5">
+                        <!-- Standard Post 1 -->
+                        <div class="col-md-6">
+                            <div class="card card-custom border-0 shadow-sm rounded-4 h-100 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&fm=jpg&fit=crop&w=600&q=80"
+                                    alt="Post Image" class="card-img-top" style="height: 250px; object-fit: cover;">
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span
+                                            class="badge bg-secondary-custom text-dark px-3 py-2 rounded-pill me-3 shadow-sm">Tips</span>
+                                        <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i> Sep 15,
+                                            2026</span>
+                                    </div>
+                                    <h5 class="fw-bold mb-3"><a href="#"
+                                            class="text-decoration-none text-dark hover-primary-custom">Packing
+                                            Essentials for a 2-Week Backpacking Trip</a></h5>
+                                    <p class="text-muted small flex-grow-1">Learn how to pack light without leaving your
+                                        essentials behind for your next big adventure across Europe or Asia.</p>
+                                    <a href="#" class="text-primary-custom fw-bold text-decoration-none mt-3">Read Full
+                                        Article <i class="bi bi-chevron-right fs-6"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Standard Post 2 -->
+                        <div class="col-md-6">
+                            <div class="card card-custom border-0 shadow-sm rounded-4 h-100 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-4.0.3&fm=jpg&fit=crop&w=600&q=80"
+                                    alt="Post Image" class="card-img-top" style="height: 250px; object-fit: cover;">
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span
+                                            class="badge bg-tertiary-custom text-white px-3 py-2 rounded-pill me-3 shadow-sm">Culture</span>
+                                        <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i> Aug 29,
+                                            2026</span>
+                                    </div>
+                                    <h5 class="fw-bold mb-3"><a href="#"
+                                            class="text-decoration-none text-dark hover-primary-custom">Experiencing
+                                            Authentic Parisian Cafés Like a Local</a></h5>
+                                    <p class="text-muted small flex-grow-1">Step away from the tourist traps and
+                                        discover the hidden gems where true Parisians spend their afternoons.</p>
+                                    <a href="#" class="text-primary-custom fw-bold text-decoration-none mt-3">Read Full
+                                        Article <i class="bi bi-chevron-right fs-6"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Standard Post 3 -->
+                        <div class="col-md-6">
+                            <div class="card card-custom border-0 shadow-sm rounded-4 h-100 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&fm=jpg&fit=crop&w=600&q=80"
+                                    alt="Post Image" class="card-img-top" style="height: 250px; object-fit: cover;">
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span
+                                            class="badge bg-primary-custom text-white px-3 py-2 rounded-pill me-3 shadow-sm">Adventure</span>
+                                        <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i> Jul 11,
+                                            2026</span>
+                                    </div>
+                                    <h5 class="fw-bold mb-3"><a href="#"
+                                            class="text-decoration-none text-dark hover-primary-custom">Top 5 Ski
+                                            Resorts in the Swiss Alps for Beginners</a></h5>
+                                    <p class="text-muted small flex-grow-1">Ready to hit the slopes? Explore our top
+                                        recommendations for resorts that cater specifically to those just starting out.
+                                    </p>
+                                    <a href="#" class="text-primary-custom fw-bold text-decoration-none mt-3">Read Full
+                                        Article <i class="bi bi-chevron-right fs-6"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Standard Post 4 -->
+                        <div class="col-md-6">
+                            <div class="card card-custom border-0 shadow-sm rounded-4 h-100 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?ixlib=rb-4.0.3&fm=jpg&fit=crop&w=600&q=80"
+                                    alt="Post Image" class="card-img-top" style="height: 250px; object-fit: cover;">
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span
+                                            class="badge bg-secondary-custom text-dark px-3 py-2 rounded-pill me-3 shadow-sm">Guide</span>
+                                        <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i> Jun 03,
+                                            2026</span>
+                                    </div>
+                                    <h5 class="fw-bold mb-3"><a href="#"
+                                            class="text-decoration-none text-dark hover-primary-custom">Trekking the
+                                            Inca Trail: Everything You Need to Know</a></h5>
+                                    <p class="text-muted small flex-grow-1">Prepare for one of the world's most famous
+                                        hikes with our comprehensive guide to permits, fitness, and altitude.</p>
+                                    <a href="#" class="text-primary-custom fw-bold text-decoration-none mt-3">Read Full
+                                        Article <i class="bi bi-chevron-right fs-6"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation" class="mb-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link border-0 rounded-circle text-muted" href="#" tabindex="-1"
+                                    aria-disabled="true"><i class="bi bi-chevron-left"></i></a>
+                            </li>
+                            <li class="page-item active mx-1"><a class="page-link rounded-circle border-0 shadow-sm"
+                                    style="background-color: var(--primary-color); color: white;" href="#">1</a></li>
+                            <li class="page-item mx-1"><a
+                                    class="page-link rounded-circle border-0 text-dark bg-light shadow-sm"
+                                    href="#">2</a></li>
+                            <li class="page-item mx-1"><a
+                                    class="page-link rounded-circle border-0 text-dark bg-light shadow-sm"
+                                    href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link border-0 rounded-circle text-dark bg-light shadow-sm ms-1"
+                                    href="#"><i class="bi bi-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <!-- Sidebar Area -->
+                <div class="col-lg-4">
+
+                    <!-- Search Widget -->
+                    <div class="card card-custom border-0 shadow-sm rounded-4 p-4 mb-4">
+                        <h5 class="fw-bold mb-3">Search Posts</h5>
+                        <div class="input-group">
+                            <input type="text"
+                                class="form-control border-end-0 bg-light border-0 py-2 rounded-start-pill"
+                                placeholder="Search keywords...">
+                            <button class="btn btn-primary-custom rounded-end-pill px-3" type="button"><i
+                                    class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="card card-custom border-0 shadow-sm rounded-4 p-4 mb-4">
+                        <h5 class="fw-bold mb-3">Categories</h5>
+                        <ul class="list-group list-group-flush">
+                            <li
+                                class="list-group-item bg-transparent d-flex justify-content-between align-items-center border-bottom border-light px-0 py-3">
+                                <a href="#" class="text-decoration-none text-muted hover-primary-custom">Travel
+                                    Guides</a>
+                                <span class="badge bg-light text-muted rounded-pill">14</span>
+                            </li>
+                            <li
+                                class="list-group-item bg-transparent d-flex justify-content-between align-items-center border-bottom border-light px-0 py-3">
+                                <a href="#" class="text-decoration-none text-muted hover-primary-custom">Adventure
+                                    Tips</a>
+                                <span class="badge bg-light text-muted rounded-pill">8</span>
+                            </li>
+                            <li
+                                class="list-group-item bg-transparent d-flex justify-content-between align-items-center border-bottom border-light px-0 py-3">
+                                <a href="#" class="text-decoration-none text-muted hover-primary-custom">Luxury
+                                    Retreats</a>
+                                <span class="badge bg-light text-muted rounded-pill">12</span>
+                            </li>
+                            <li
+                                class="list-group-item bg-transparent d-flex justify-content-between align-items-center px-0 py-3">
+                                <a href="#" class="text-decoration-none text-muted hover-primary-custom">Cultural
+                                    Experiences</a>
+                                <span class="badge bg-light text-muted rounded-pill">9</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Recent Posts Widget -->
+                    <div class="card card-custom border-0 shadow-sm rounded-4 p-4 mb-4">
+                        <h5 class="fw-bold mb-4">Recent Posts</h5>
+
+                        <a href="#" class="text-decoration-none">
+                            <div class="d-flex align-items-center mb-3 pb-3 border-bottom border-light">
+                                <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&fm=jpg&fit=crop&w=100&q=80"
+                                    class="rounded-3" alt="Thumb" width="70" height="70" style="object-fit: cover;">
+                                <div class="ms-3">
+                                    <h6 class="fw-bold text-dark mb-1 lh-sm" style="font-size: 0.9rem;">Best Time to
+                                        Visit The Maldives</h6>
+                                    <small class="text-muted"><i class="bi bi-clock me-1"></i> Oct 18, 2026</small>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="text-decoration-none">
+                            <div class="d-flex align-items-center mb-3 pb-3 border-bottom border-light">
+                                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&fm=jpg&fit=crop&w=100&q=80"
+                                    class="rounded-3" alt="Thumb" width="70" height="70" style="object-fit: cover;">
+                                <div class="ms-3">
+                                    <h6 class="fw-bold text-dark mb-1 lh-sm" style="font-size: 0.9rem;">Navigating
+                                        Foreign Transportation</h6>
+                                    <small class="text-muted"><i class="bi bi-clock me-1"></i> Oct 12, 2026</small>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="text-decoration-none">
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&fm=jpg&fit=crop&w=100&q=80"
+                                    class="rounded-3" alt="Thumb" width="70" height="70" style="object-fit: cover;">
+                                <div class="ms-3">
+                                    <h6 class="fw-bold text-dark mb-1 lh-sm" style="font-size: 0.9rem;">A Photographic
+                                        Journey in Kyoto</h6>
+                                    <small class="text-muted"><i class="bi bi-clock me-1"></i> Sep 25, 2026</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Newsletter Widget -->
+                    <div
+                        class="card border-0 shadow-premium rounded-4 p-4 bg-tertiary-custom text-white position-relative overflow-hidden">
+                        <div class="position-absolute top-0 end-0 opacity-10 m-n3"><i
+                                class="bi bi-envelope-paper display-1 z-0"></i></div>
+                        <div class="position-relative z-1">
+                            <h5 class="fw-bold mb-2">Subscribe</h5>
+                            <p class="small opacity-75 mb-4">Get the latest travel news and deals directly to your
+                                inbox.</p>
+                            <div class="input-group">
+                                <input type="email" class="form-control border-0 rounded-start-pill py-2 text-sm"
+                                    placeholder="Email Address">
+                                <button class="btn btn-primary-custom rounded-end-pill px-3" type="button"><i
+                                        class="bi bi-send-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer border-top-0 pt-5 mt-0 bg-light">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="text-decoration-none d-flex align-items-center mb-3">
+                        <i class="bi bi-airplane-engines fs-2 text-primary-custom me-2"></i>
+                        <span class="fs-3 fw-bold text-primary-custom">AuraTravels</span>
+                    </a>
+                    <p class="text-muted mb-4 pe-lg-4">
+                        Making your travel dreams true with professional guided tours, standard hotel bookings, and safe
+                        flight reservations worldwide.
+                    </p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon text-muted me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon text-muted me-3 fs-5"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon text-muted me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon text-muted me-3 fs-5"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title fw-bold mb-3">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-muted text-decoration-none">Our
+                                Services</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title fw-bold mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Help Center</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">FAQs</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-muted text-decoration-none">Contact Us</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title fw-bold mb-3">Contact Info</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="bi bi-geo-alt text-primary-custom me-2"></i> 123 Travel Avenue, NY
+                            10001, USA</li>
+                        <li class="mb-2"><i class="bi bi-telephone text-primary-custom me-2"></i> +1 (555) 123-4567</li>
+                        <li class="mb-2"><i class="bi bi-envelope text-primary-custom me-2"></i> support@auratravels.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary border-opacity-10 mt-5">
+            <div class="text-center pb-4 pt-3">
+                <p class="text-muted small mb-0">&copy; 2026 AuraTravels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop"
+        class="btn btn-primary-custom rounded-circle shadow-premium position-fixed bottom-0 end-0 m-4"
+        style="width: 50px; height: 50px; display: none;" title="Go to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+

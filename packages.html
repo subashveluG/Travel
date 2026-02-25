@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages | AuraTravels</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top glass-overlay px-3 px-lg-0 py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-airplane-engines fs-2 text-primary-custom me-2"></i>
+                <span class="fs-4 fw-bold text-primary-custom">AuraTravels</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-card" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title fw-bold text-primary-custom" id="offcanvasNavbarLabel">
+                        <i class="bi bi-airplane-engines me-2"></i> AuraTravels
+                    </h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html">Home 1</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="Home2.html">Home 2</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="destinations.html">Destinations</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active fw-bold text-primary-custom" href="packages.html">Packages</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav align-items-lg-center">
+                        <li class="nav-item mb-2 mb-lg-0 me-lg-2">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 me-lg-3">
+                            <a class="btn btn-primary-custom rounded-pill px-4 fw-bold" href="signup.html">Sign Up</a>
+                        </li>
+                        <div class="vr d-none d-lg-block mx-2 bg-secondary opacity-25"></div>
+                        <div class="d-flex align-items-center mt-3 mt-lg-0">
+                            <button id="themeToggle" class="btn btn-link nav-link p-0 ms-lg-2 fs-5"
+                                aria-label="Toggle Theme">
+                                <i id="themeIcon" class="bi bi-moon-stars"></i>
+                            </button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section
+        class="py-5 bg-tertiary-custom text-white position-relative overflow-hidden mb-5 mx-3 mx-lg-5 rounded-5 shadow-premium">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+            alt="Planes" class="position-absolute w-100 h-100 opacity-25"
+            style="top: 0; left: 0; object-fit: cover; filter: grayscale(50%);">
+        <div class="container py-5 text-center position-relative z-1">
+            <span
+                class="badge bg-white text-tertiary-custom rounded-pill px-3 py-2 mb-3 shadow-sm fw-bold">Curated</span>
+            <h1 class="display-4 fw-bold">Exclusive Packages</h1>
+            <p class="lead opacity-75 mx-auto" style="max-width: 600px;">Carefully crafted itineraries offering the
+                perfect balance of adventure and relaxation.</p>
+        </div>
+    </section>
+
+    <!-- Packages Content -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+
+            <div class="row g-5">
+                <!-- Package 1 -->
+                <div class="col-12">
+                    <div class="card card-custom border-0 shadow-premium rounded-5 overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-lg-5 position-relative">
+                                <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    class="img-fluid h-100 w-100 object-fit-cover" alt="Peru">
+                                <div class="position-absolute top-0 start-0 m-3">
+                                    <span class="badge bg-primary-custom px-3 py-2 rounded-pill shadow-sm"><i
+                                            class="bi bi-star-fill text-warning me-1"></i> Bestseller</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 p-4 p-md-5 d-flex flex-column justify-content-center">
+                                <div
+                                    class="d-flex justify-content-between align-items-center border-bottom border-light pb-3 mb-4">
+                                    <div>
+                                        <h2 class="fw-bold mb-1">Inca Trail Expedition</h2>
+                                        <p class="text-muted mb-0"><i class="bi bi-geo-alt-fill text-danger me-1"></i>
+                                            Machu Picchu, Peru</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h3 class="fw-bold text-primary-custom mb-0">$1,850</h3>
+                                        <p class="text-muted small mb-0">per person</p>
+                                    </div>
+                                </div>
+
+                                <p class="text-muted mb-4 lead">Embark on a breathtaking 7-day journey through the Andes
+                                    mountains culminating in the spectacular ancient city of Machu Picchu.</p>
+
+                                <div class="row g-3 mb-4">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="d-flex align-items-center text-muted small fw-bold">
+                                            <i class="bi bi-clock-history fs-4 text-tertiary-custom me-2"></i> 7 Days
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="d-flex align-items-center text-muted small fw-bold">
+                                            <i class="bi bi-people fs-4 text-tertiary-custom me-2"></i> Max 12 People
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="d-flex align-items-center text-muted small fw-bold">
+                                            <i class="bi bi-activity fs-4 text-tertiary-custom me-2"></i> Strenuous
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="d-flex align-items-center text-muted small fw-bold">
+                                            <i class="bi bi-translate fs-4 text-tertiary-custom me-2"></i>
+                                            English/Spanish
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h6 class="fw-bold mb-3">Package Includes:</h6>
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="badge bg-light text-dark px-3 py-2 rounded-pill border"><i
+                                            class="bi bi-airplane me-1"></i> Roundtrip Flight</span>
+                                    <span class="badge bg-light text-dark px-3 py-2 rounded-pill border"><i
+                                            class="bi bi-house-heart me-1"></i> 3-Star Hotels + Camping</span>
+                                    <span class="badge bg-light text-dark px-3 py-2 rounded-pill border"><i
+                                            class="bi bi-cup-hot me-1"></i> All Meals on Trek</span>
+                                    <span class="badge bg-light text-dark px-3 py-2 rounded-pill border"><i
+                                            class="bi bi-person-badge me-1"></i> Expert Guide</span>
+                                </div>
+
+                                <div class="d-flex gap-3 mt-auto">
+                                    <button class="btn btn-primary-custom rounded-pill px-4 fw-bold">Book
+                                        Package</button>
+                                    <button class="btn btn-outline-secondary rounded-pill px-4 fw-bold">View Itinerary
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="col-12">
+                    <div class="card card-custom border-0 shadow-premium rounded-5 overflow-hidden">
+                        <div class="row g-0 flex-lg-row-reverse">
+                            <div class="col-lg-5 position-relative">
+                                <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    class="img-fluid h-100 w-100 object-fit-cover" alt="Paris">
+                                <div class="position-absolute top-0 end-0 m-3">
+                                    <span class="badge bg-tertiary-custom px-3 py-2 rounded-pill shadow-sm"><i
+                                            class="bi bi-heart-fill text-white me-1"></i> Romantic Retreat</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 p-4 p-md-5 d-flex flex-column justify-content-center">
+                                <div
+                                    class="d-flex justify-content-between align-items-center border-bottom border-light pb-3 mb-4">
+                                    <div>
+                                        <h2 class="fw-bold mb-1">Parisian Romance</h2>
+                                        <p class="text-muted mb-0"><i class="bi bi-geo-alt-fill text-danger me-1"></i>
+                                            Paris, France</p>
+                                    </div>
+                                    <div class="text-lg-end">
+                                        <h3 class="fw-bold text-primary-custom mb-0">$2,450</h3>
+                                        <p class="text-muted small mb-0">per couple</p>
+                                    </div>
+                                </div>
+
+                                <p class="text-muted mb-4 lead">Experience the magic of Paris with this exclusive 5-day
+                                    romantic getaway, featuring luxury dining, private tours, and a Seine river cruise.
+                                </p>
+
+                                <div class="row g-3 mb-4">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="d-flex align-items-center text-muted small fw-bold">
+                                            <i class="bi bi-clock-history fs-4 text-tertiary-custom me-2"></i> 5 Days
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="d-flex align-items-center text-muted small fw-bold">
+                                            <i class="bi bi-people fs-4 text-tertiary-custom me-2"></i> 2 Adults
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="d-flex align-items-center text-muted small fw-bold">
+                                            <i class="bi bi-activity fs-4 text-tertiary-custom me-2"></i> Relaxed
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="d-flex align-items-center text-muted small fw-bold">
+                                            <i class="bi bi-translate fs-4 text-tertiary-custom me-2"></i>
+                                            English/French
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h6 class="fw-bold mb-3">Package Includes:</h6>
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="badge bg-light text-dark px-3 py-2 rounded-pill border"><i
+                                            class="bi bi-star-fill text-warning me-1"></i> 5-Star Hotel</span>
+                                    <span class="badge bg-light text-dark px-3 py-2 rounded-pill border"><i
+                                            class="bi bi-car-front me-1"></i> Chauffeur Service</span>
+                                    <span class="badge bg-light text-dark px-3 py-2 rounded-pill border"><i
+                                            class="bi bi-ticket-perforated me-1"></i> Museum Passes</span>
+                                    <span class="badge bg-light text-dark px-3 py-2 rounded-pill border"><i
+                                            class="bi bi-cup-glass me-1"></i> Fine Dining</span>
+                                </div>
+
+                                <div class="d-flex gap-3 mt-auto">
+                                    <button class="btn btn-primary-custom rounded-pill px-4 fw-bold">Book
+                                        Package</button>
+                                    <button class="btn btn-outline-secondary rounded-pill px-4 fw-bold">View Itinerary
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="col-12">
+                    <div class="card card-custom border-0 shadow-premium rounded-5 overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-lg-5 position-relative">
+                                <img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    class="img-fluid h-100 w-100 object-fit-cover" alt="Bali">
+                                <div class="position-absolute top-0 start-0 m-3">
+                                    <span
+                                        class="badge bg-secondary-custom text-dark px-3 py-2 rounded-pill shadow-sm"><i
+                                            class="bi bi-fire text-danger me-1"></i> Trending</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 p-4 p-md-5 d-flex flex-column justify-content-center">
+                                <div
+                                    class="d-flex justify-content-between align-items-center border-bottom border-light pb-3 mb-4">
+                                    <div>
+                                        <h2 class="fw-bold mb-1">Bali Explorer</h2>
+                                        <p class="text-muted mb-0"><i class="bi bi-geo-alt-fill text-danger me-1"></i>
+                                            Bali, Indonesia</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h3 class="fw-bold text-primary-custom mb-0">$1,150</h3>
+                                        <p class="text-muted small mb-0">per person</p>
+                                    </div>
+                                </div>
+
+                                <p class="text-muted mb-4 lead">Discover the spiritual heart, pristine beaches, and lush
+                                    terraced hillsides of Bali on this comprehensive 10-day island hopping tour.</p>
+
+                                <div class="row g-3 mb-4">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="d-flex align-items-center text-muted small fw-bold">
+                                            <i class="bi bi-clock-history fs-4 text-tertiary-custom me-2"></i> 10 Days
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="d-flex align-items-center text-muted small fw-bold">
+                                            <i class="bi bi-people fs-4 text-tertiary-custom me-2"></i> Flexible
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="d-flex align-items-center text-muted small fw-bold">
+                                            <i class="bi bi-activity fs-4 text-tertiary-custom me-2"></i> Moderate
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="d-flex align-items-center text-muted small fw-bold">
+                                            <i class="bi bi-translate fs-4 text-tertiary-custom me-2"></i> English
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h6 class="fw-bold mb-3">Package Includes:</h6>
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="badge bg-light text-dark px-3 py-2 rounded-pill border"><i
+                                            class="bi bi-house-heart me-1"></i> Luxury Villa</span>
+                                    <span class="badge bg-light text-dark px-3 py-2 rounded-pill border"><i
+                                            class="bi bi-camera me-1"></i> Temple Entry</span>
+                                    <span class="badge bg-light text-dark px-3 py-2 rounded-pill border"><i
+                                            class="bi bi-droplet-half me-1"></i> Scuba Diving</span>
+                                    <span class="badge bg-light text-dark px-3 py-2 rounded-pill border"><i
+                                            class="bi bi-egg-fried me-1"></i> Daily Breakfast</span>
+                                </div>
+
+                                <div class="d-flex gap-3 mt-auto">
+                                    <button class="btn btn-primary-custom rounded-pill px-4 fw-bold">Book
+                                        Package</button>
+                                    <button class="btn btn-outline-secondary rounded-pill px-4 fw-bold">View Itinerary
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-primary rounded-pill px-5 py-3 fw-bold shadow-sm">Explore More Packages
+                    <i class="bi bi-arrow-down ms-2"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer border-top-0 pt-5 mt-0 bg-white">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="text-decoration-none d-flex align-items-center mb-3">
+                        <i class="bi bi-airplane-engines fs-2 text-primary-custom me-2"></i>
+                        <span class="fs-3 fw-bold text-primary-custom">AuraTravels</span>
+                    </a>
+                    <p class="text-muted mb-4 pe-lg-4">
+                        Making your travel dreams true with professional guided tours, standard hotel bookings, and safe
+                        flight reservations worldwide.
+                    </p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon text-muted me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon text-muted me-3 fs-5"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon text-muted me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon text-muted me-3 fs-5"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title fw-bold mb-3">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-muted text-decoration-none">Our
+                                Services</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title fw-bold mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Help Center</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">FAQs</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-muted text-decoration-none">Contact Us</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title fw-bold mb-3">Contact Info</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="bi bi-geo-alt text-primary-custom me-2"></i> 123 Travel Avenue, NY
+                            10001, USA</li>
+                        <li class="mb-2"><i class="bi bi-telephone text-primary-custom me-2"></i> +1 (555) 123-4567</li>
+                        <li class="mb-2"><i class="bi bi-envelope text-primary-custom me-2"></i> support@auratravels.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary border-opacity-10 mt-5">
+            <div class="text-center pb-4 pt-3">
+                <p class="text-muted small mb-0">&copy; 2026 AuraTravels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop"
+        class="btn btn-primary-custom rounded-circle shadow-premium position-fixed bottom-0 end-0 m-4"
+        style="width: 50px; height: 50px; display: none;" title="Go to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | AuraTravels</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top glass-overlay px-3 px-lg-0 py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-airplane-engines fs-2 text-primary-custom me-2"></i>
+                <span class="fs-4 fw-bold text-primary-custom">AuraTravels</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-card" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title fw-bold text-primary-custom" id="offcanvasNavbarLabel">
+                        <i class="bi bi-airplane-engines me-2"></i> AuraTravels
+                    </h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html">Home 1</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="Home2.html">Home 2</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="destinations.html">Destinations</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="packages.html">Packages</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active fw-bold text-primary-custom" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav align-items-lg-center">
+                        <li class="nav-item mb-2 mb-lg-0 me-lg-2">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0 me-lg-3">
+                            <a class="btn btn-primary-custom rounded-pill px-4 fw-bold" href="signup.html">Sign Up</a>
+                        </li>
+                        <div class="vr d-none d-lg-block mx-2 bg-secondary opacity-25"></div>
+                        <div class="d-flex align-items-center mt-3 mt-lg-0">
+                            <button id="themeToggle" class="btn btn-link nav-link p-0 ms-lg-2 fs-5"
+                                aria-label="Toggle Theme">
+                                <i id="themeIcon" class="bi bi-moon-stars"></i>
+                            </button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section
+        class="py-5 bg-tertiary-custom text-white position-relative overflow-hidden mb-5 mx-3 mx-lg-5 rounded-5 shadow-premium">
+        <!-- Abstract gradient background instead of image for a cleaner contact look -->
+        <div class="position-absolute w-100 h-100 opacity-50"
+            style="top: 0; left: 0; background: linear-gradient(135deg, rgba(11, 37, 69, 0.8) 0%, rgba(74, 111, 165, 0.8) 100%); z-index: 0;">
+        </div>
+        <div class="container py-5 text-center position-relative z-1">
+            <span class="badge bg-white text-tertiary-custom rounded-pill px-3 py-2 mb-3 shadow-sm fw-bold">Get In
+                Touch</span>
+            <h1 class="display-4 fw-bold">Contact Us</h1>
+            <p class="lead opacity-75 mx-auto" style="max-width: 600px;">Have questions? Our team of travel experts is
+                ready to help you plan the perfect trip.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- Contact Information -->
+                <div class="col-lg-5 order-lg-2">
+                    <div
+                        class="card card-custom border-0 shadow-premium rounded-5 p-4 p-md-5 h-100 bg-primary-custom text-white position-relative overflow-hidden">
+                        <div class="position-absolute bottom-0 end-0 opacity-10 m-n4"><i class="bi bi-globe display-1"
+                                style="font-size: 15rem;"></i></div>
+
+                        <div class="position-relative z-1">
+                            <h3 class="fw-bold mb-4">Contact Information</h3>
+                            <p class="text-white-50 mb-5">Fill up the form and our team will get back to you within 24
+                                hours.</p>
+
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="bg-secondary-custom text-dark rounded-circle p-3 me-3 flex-shrink-0 text-center"
+                                    style="width: 50px; height: 50px; line-height: 20px;">
+                                    <i class="bi bi-telephone-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Phone Number</h6>
+                                    <p class="text-white-50 mb-0">+1 (555) 123-4567</p>
+                                    <p class="text-white-50 small mb-0">Mon-Fri, 9am-6pm EST</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="bg-secondary-custom text-dark rounded-circle p-3 me-3 flex-shrink-0 text-center"
+                                    style="width: 50px; height: 50px; line-height: 20px;">
+                                    <i class="bi bi-envelope-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Email Address</h6>
+                                    <p class="text-white-50 mb-0">support@auratravels.com</p>
+                                    <p class="text-white-50 small mb-0">For general inquiries</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-5">
+                                <div class="bg-secondary-custom text-dark rounded-circle p-3 me-3 flex-shrink-0 text-center"
+                                    style="width: 50px; height: 50px; line-height: 20px;">
+                                    <i class="bi bi-geo-alt-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Office Address</h6>
+                                    <p class="text-white-50 mb-0">123 Travel Avenue<br>New York, NY 10001<br>United
+                                        States</p>
+                                </div>
+                            </div>
+
+                            <h6 class="fw-bold mb-3">Connect With Us</h6>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-outline-light rounded-circle shadow-sm"
+                                    style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;"><i
+                                        class="bi bi-twitter-x"></i></a>
+                                <a href="#" class="btn btn-outline-light rounded-circle shadow-sm"
+                                    style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;"><i
+                                        class="bi bi-facebook"></i></a>
+                                <a href="#" class="btn btn-outline-light rounded-circle shadow-sm"
+                                    style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;"><i
+                                        class="bi bi-instagram"></i></a>
+                                <a href="#" class="btn btn-outline-light rounded-circle shadow-sm"
+                                    style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;"><i
+                                        class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7 order-lg-1">
+                    <div class="card card-custom border-0 shadow-sm rounded-5 p-4 p-md-5 h-100">
+                        <h3 class="fw-bold mb-1">Send a Message</h3>
+                        <p class="text-muted mb-4">We'd love to hear from you. Please fill out the form below.</p>
+
+                        <form>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label text-muted small fw-bold">First
+                                        Name</label>
+                                    <input type="text" class="form-control bg-light border-0 rounded-3 py-2"
+                                        id="firstName" placeholder="John">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label text-muted small fw-bold">Last Name</label>
+                                    <input type="text" class="form-control bg-light border-0 rounded-3 py-2"
+                                        id="lastName" placeholder="Doe">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label text-muted small fw-bold">Email Address</label>
+                                    <input type="email" class="form-control bg-light border-0 rounded-3 py-2" id="email"
+                                        placeholder="john@example.com">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label text-muted small fw-bold">Phone Number</label>
+                                    <input type="tel" class="form-control bg-light border-0 rounded-3 py-2" id="phone"
+                                        placeholder="+1 (555) 000-0000">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-muted small fw-bold">What are you interested
+                                        in?</label>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <input type="radio" class="btn-check" name="interest" id="interest-1"
+                                            autocomplete="off" checked>
+                                        <label class="btn btn-outline-secondary rounded-pill" for="interest-1">General
+                                            Inquiry</label>
+
+                                        <input type="radio" class="btn-check" name="interest" id="interest-2"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-secondary rounded-pill" for="interest-2">Tour
+                                            Packages</label>
+
+                                        <input type="radio" class="btn-check" name="interest" id="interest-3"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-secondary rounded-pill" for="interest-3">Custom
+                                            Itinerary</label>
+
+                                        <input type="radio" class="btn-check" name="interest" id="interest-4"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-secondary rounded-pill"
+                                            for="interest-4">Support</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label text-muted small fw-bold">Message</label>
+                                    <textarea class="form-control bg-light border-0 rounded-3 py-2" id="message"
+                                        rows="5" placeholder="Write your message here..."></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit"
+                                        class="btn btn-primary-custom rounded-pill w-100 py-3 fw-bold">Send Message <i
+                                            class="bi bi-send ms-2"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+        <div class="container pb-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Find Us on the <span class="text-primary-custom">Map</span></h2>
+                <p class="text-muted">Visit our global headquarters located in the heart of New York City.</p>
+            </div>
+
+            <div class="card card-custom border-0 shadow-premium rounded-5 overflow-hidden">
+                <!-- Interactive Map Placeholder using an iframe embed (using a standard map embed for demonstration) -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1699999999999!5m2!1sen!2s"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (Condensed for Contact Page) -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0 pe-lg-5">
+                    <span
+                        class="badge bg-light text-tertiary-custom justify-content-start rounded-pill px-3 py-2 mb-3 shadow-sm fw-bold">FAQ</span>
+                    <h2 class="fw-bold display-6 mb-4">Frequently Asked <span
+                            class="text-primary-custom">Questions</span></h2>
+                    <p class="text-muted mb-4 lead">Can't find the answer you're looking for? Reach out to our customer
+                        support team.</p>
+                    <a href="contact.html" class="btn btn-outline-primary rounded-pill px-4 fw-bold">Contact Support</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="accordion accordion-custom" id="contactFaq">
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-bold bg-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    How fast do you respond to inquiries?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#contactFaq">
+                                <div class="accordion-body text-muted bg-white border-top">
+                                    We aim to respond to all emails and form submissions within 24 hours during regular
+                                    business days. For urgent matters, please call our phone number.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button fw-bold bg-white collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Do you offer support in multiple languages?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#contactFaq">
+                                <div class="accordion-body text-muted bg-white border-top">
+                                    Yes, our support team can assist you in English, Spanish, French, and Mandarin.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button fw-bold bg-white collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Where are your local travel agents located?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#contactFaq">
+                                <div class="accordion-body text-muted bg-white border-top">
+                                    We have a network of local guides across 50+ countries. Our main headquarters is in
+                                    New York, with regional offices in London, Tokyo, and Sydney.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer border-top-0 pt-5 mt-0 bg-light">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="text-decoration-none d-flex align-items-center mb-3">
+                        <i class="bi bi-airplane-engines fs-2 text-primary-custom me-2"></i>
+                        <span class="fs-3 fw-bold text-primary-custom">AuraTravels</span>
+                    </a>
+                    <p class="text-muted mb-4 pe-lg-4">
+                        Making your travel dreams true with professional guided tours, standard hotel bookings, and safe
+                        flight reservations worldwide.
+                    </p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon text-muted me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon text-muted me-3 fs-5"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon text-muted me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon text-muted me-3 fs-5"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title fw-bold mb-3">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-muted text-decoration-none">Our
+                                Services</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title fw-bold mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Help Center</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">FAQs</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-muted text-decoration-none">Contact Us</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title fw-bold mb-3">Contact Info</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="bi bi-geo-alt text-primary-custom me-2"></i> 123 Travel Avenue, NY
+                            10001, USA</li>
+                        <li class="mb-2"><i class="bi bi-telephone text-primary-custom me-2"></i> +1 (555) 123-4567</li>
+                        <li class="mb-2"><i class="bi bi-envelope text-primary-custom me-2"></i> support@auratravels.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary border-opacity-10 mt-5">
+            <div class="text-center pb-4 pt-3">
+                <p class="text-muted small mb-0">&copy; 2026 AuraTravels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop"
+        class="btn btn-primary-custom rounded-circle shadow-premium position-fixed bottom-0 end-0 m-4"
+        style="width: 50px; height: 50px; display: none;" title="Go to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

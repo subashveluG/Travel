@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | AuraTravels</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-airplane-engines text-primary-custom me-2"></i> AuraTravels
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold text-primary-custom" id="offcanvasNavbarLabel">
+                        <i class="bi bi-airplane-engines me-2"></i> AuraTravels
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Home2.html">Home 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <div class="d-flex flex-column flex-lg-row gap-2 mt-3 mt-lg-0 align-items-lg-center">
+                            <a href="login.html" class="btn btn-outline-primary fw-medium px-4">Login</a>
+                            <a href="signup.html" class="btn btn-primary-custom fw-medium px-4">Sign Up</a>
+
+                            <button id="themeToggle" class="btn btn-link nav-link p-0 ms-lg-2 fs-5"
+                                aria-label="Toggle Theme">
+                                <i id="themeIcon" class="bi bi-moon-stars"></i>
+                            </button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5 bg-tertiary-custom text-white text-center">
+        <div class="container py-4">
+            <h1 class="display-4 fw-bold">Our Services</h1>
+            <p class="lead opacity-75">Discover what we can do to make your journey unforgettable</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row g-4">
+
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-custom border-0 text-center p-3 shadow-premium rounded-4">
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Flight Booking" class="card-img-top rounded-4 mb-3"
+                            style="height: 180px; object-fit: cover;">
+                        <h4 class="fw-bold mb-2">Flight Booking</h4>
+                        <p class="text-muted small mb-0">Get the best rates on international and domestic flights.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-custom border-0 text-center p-3 shadow-premium rounded-4">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Hotel Reservation" class="card-img-top rounded-4 mb-3"
+                            style="height: 180px; object-fit: cover;">
+                        <h4 class="fw-bold mb-2">Hotel Reservation</h4>
+                        <p class="text-muted small mb-0">From budget stays to luxury resorts, we book it all.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-custom border-0 text-center p-3 shadow-premium rounded-4">
+                        <img src="https://images.unsplash.com/photo-1516939884455-1445c8652f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Tour Guides" class="card-img-top rounded-4 mb-3"
+                            style="height: 180px; object-fit: cover;">
+                        <h4 class="fw-bold mb-2">Tour Guides</h4>
+                        <p class="text-muted small mb-0">Professional, local guides to show you the hidden gems.</p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-custom border-0 text-center p-3 shadow-premium rounded-4">
+                        <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Cruise Packages" class="card-img-top rounded-4 mb-3"
+                            style="height: 180px; object-fit: cover;">
+                        <h4 class="fw-bold mb-2">Cruise Packages</h4>
+                        <p class="text-muted small mb-0">Relax on top-tier cruises across beautiful oceans.</p>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-custom border-0 text-center p-3 shadow-premium rounded-4">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Travel Insurance" class="card-img-top rounded-4 mb-3"
+                            style="height: 180px; object-fit: cover;">
+                        <h4 class="fw-bold mb-2">Travel Insurance</h4>
+                        <p class="text-muted small mb-0">Stay protected and travel with complete peace of mind.</p>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-custom border-0 text-center p-3 shadow-premium rounded-4">
+                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Car Rentals" class="card-img-top rounded-4 mb-3"
+                            style="height: 180px; object-fit: cover;">
+                        <h4 class="fw-bold mb-2">Car Rentals</h4>
+                        <p class="text-muted small mb-0">Affordable car rentals at your destination.</p>
+                    </div>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-custom border-0 text-center p-3 shadow-premium rounded-4">
+                        <img src="https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Visa Assistance" class="card-img-top rounded-4 mb-3"
+                            style="height: 180px; object-fit: cover;">
+                        <h4 class="fw-bold mb-2">Visa Assistance</h4>
+                        <p class="text-muted small mb-0">Hassle-free visa processing and document support.</p>
+                    </div>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-custom border-0 text-center p-3 shadow-premium rounded-4">
+                        <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Honeymoon Packages" class="card-img-top rounded-4 mb-3"
+                            style="height: 180px; object-fit: cover;">
+                        <h4 class="fw-bold mb-2">Honeymoon Offers</h4>
+                        <p class="text-muted small mb-0">Exclusive, romantic getaways crafted just for couples.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span
+                    class="text-tertiary-custom fw-bold px-3 py-1 bg-white rounded-pill mb-3 d-inline-block shadow-sm">Easy
+                    Booking</span>
+                <h2 class="fw-bold">Our <span class="text-secondary-custom">Process</span></h2>
+                <p class="text-muted">Get ready for your next adventure in 4 easy steps.</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="display-4 text-primary-custom mb-3"><i class="bi bi-search"></i></div>
+                    <h5 class="fw-bold">1. Find Your Tour</h5>
+                    <p class="text-muted small">Browse through our extensive list of tours and packages.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="display-4 text-tertiary-custom mb-3"><i class="bi bi-person-lines-fill"></i></div>
+                    <h5 class="fw-bold">2. Contact Agent</h5>
+                    <p class="text-muted small">Speak with our travel experts to customize your itinerary.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="display-4 text-secondary-custom mb-3"><i class="bi bi-credit-card"></i></div>
+                    <h5 class="fw-bold">3. Secure Payment</h5>
+                    <p class="text-muted small">Pay securely online with our encrypted payment gateway.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="display-4 text-primary mb-3"><i class="bi bi-emoji-smile"></i></div>
+                    <h5 class="fw-bold">4. Enjoy Vacation</h5>
+                    <p class="text-muted small">Pack your bags and enjoy a stress-free travel experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span
+                    class="text-secondary-custom fw-bold px-3 py-1 bg-light rounded-pill mb-3 d-inline-block shadow-sm">Transparent
+                    Pricing</span>
+                <h2 class="fw-bold">Choose Your <span class="text-primary-custom">Plan</span></h2>
+                <p class="text-muted">Flexible planning and support services tailored for you</p>
+            </div>
+            <div class="row g-4 align-items-center">
+                <!-- Basic Plan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom border-0 p-5 shadow-sm rounded-5 text-center h-100">
+                        <h4 class="fw-bold mb-3">Essential</h4>
+                        <div class="display-4 fw-bold text-primary-custom mb-2">Free</div>
+                        <p class="text-muted small mb-4">Self-guided travelers</p>
+                        <ul class="list-unstyled mb-4 flex-grow-1">
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-tertiary-custom me-2"></i>Access to
+                                booking engine</li>
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-tertiary-custom me-2"></i>Standard
+                                itinerary templates</li>
+                            <li class="mb-3 text-muted"><i class="bi bi-dash-circle text-muted me-2"></i>No dedicated
+                                agent</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary rounded-pill w-100 fw-bold py-2 mt-auto">Get
+                            Started</a>
+                    </div>
+                </div>
+                <!-- Premium Plan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom border-0 p-5 shadow-premium rounded-5 text-center position-relative h-100 bg-primary-custom text-white"
+                        style="transform: translateY(-10px);">
+                        <span
+                            class="position-absolute top-0 end-0 bg-secondary-custom text-white px-3 py-1 small fw-bold"
+                            style="border-bottom-left-radius: 1rem; border-top-right-radius: 1rem;">Most Popular</span>
+                        <h4 class="fw-bold mb-3">Premium</h4>
+                        <div class="display-4 fw-bold mb-2">$99<span class="fs-5 text-white-50">/trip</span></div>
+                        <p class="text-white-50 small mb-4">For curated vacations</p>
+                        <ul class="list-unstyled mb-4 flex-grow-1">
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-secondary-custom me-2"></i>Dedicated
+                                Travel Agent</li>
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-secondary-custom me-2"></i>Custom
+                                Itinerary Planning</li>
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-secondary-custom me-2"></i>24/7
+                                Priority Support</li>
+                        </ul>
+                        <a href="#"
+                            class="btn btn-secondary-custom rounded-pill w-100 fw-bold py-2 mt-auto text-dark">Select
+                            Premium</a>
+                    </div>
+                </div>
+                <!-- VIP Plan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom border-0 p-5 shadow-sm rounded-5 text-center h-100">
+                        <h4 class="fw-bold mb-3">VIP Concierge</h4>
+                        <div class="display-4 fw-bold text-primary-custom mb-2">$299<span
+                                class="fs-5 text-muted">/trip</span></div>
+                        <p class="text-muted small mb-4">Ultimate luxury & flexibility</p>
+                        <ul class="list-unstyled mb-4 flex-grow-1">
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-tertiary-custom me-2"></i>All
+                                Premium Features</li>
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-tertiary-custom me-2"></i>On-Trip
+                                Concierge</li>
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-tertiary-custom me-2"></i>Exclusive
+                                Lounge Access</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary rounded-pill w-100 fw-bold py-2 mt-auto">Contact
+                            Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Frequently Asked <span class="text-primary-custom">Questions</span></h2>
+                <p class="text-muted">Everything you need to know about our services.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion accordion-custom" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3 shadow-premium rounded-4 overflow-hidden">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-bold bg-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    How do I book a tour package?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted bg-white border-top">
+                                    You can book directly through our website by selecting your desired package and
+                                    clicking "Book Now." Alternatively, you can contact our travel experts for a
+                                    customized itinerary.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-premium rounded-4 overflow-hidden">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button fw-bold bg-white collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Are flights included in the packages?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted bg-white border-top">
+                                    This depends on the specific package. Some of our premium tours include round-trip
+                                    flights, while others only cover land arrangements. Please check the "Inclusions"
+                                    tab on each package.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm rounded-3 overflow-hidden">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button fw-bold bg-white collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    What is your cancellation policy?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted bg-white border-top">
+                                    We offer a full refund for cancellations made at least 30 days prior to departure.
+                                    Cancellations made within 30 days may be subject to a fee. Please refer to our full
+                                    Terms & Conditions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer border-top-0 pt-5 mt-0">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="text-decoration-none d-flex align-items-center mb-3">
+                        <i class="bi bi-airplane-engines fs-2 text-primary-custom me-2"></i>
+                        <span class="fs-3 fw-bold text-primary-custom">AuraTravels</span>
+                    </a>
+                    <p class="text-muted mb-4 pe-lg-4">
+                        Making your travel dreams true with professional guided tours, standard hotel bookings, and safe
+                        flight reservations worldwide.
+                    </p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="services.html" class="footer-link">Our Services</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="bi bi-geo-alt text-primary-custom me-2"></i> 123 Travel Avenue, NY
+                            10001, USA</li>
+                        <li class="mb-2"><i class="bi bi-telephone text-primary-custom me-2"></i> +1 (555) 123-4567</li>
+                        <li class="mb-2"><i class="bi bi-envelope text-primary-custom me-2"></i> support@auratravels.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary opacity-25">
+            <div class="text-center pb-3 pt-2">
+                <p class="text-muted mb-0">&copy; 2026 AuraTravels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Go to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
